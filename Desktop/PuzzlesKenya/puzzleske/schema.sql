@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE IF NOT EXISTS users(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL,
+    email TEXT
+);
+
+CREATE TABLE IF NOT EXISTS items(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    image TEXT,
+    description TEXT NOT NULL,
+    quantity TEXT,
+    price INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS cart(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    image TEXT,
+    name TEXT,
+    quantity INTEGER,
+    price INTEGER,
+    FOREIGN KEY(id) REFERENCES items(id)
+);

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}File Upload {% endblock %}
+
+
+{% block banner %} <h1>FileUpload</h1> {% endblock %}
+
+{% block content %}
+<div class="upload">
+  <section class="content" id="content">
+    <form method="POST" action="" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".png, .jpg, .jpeg"><br><br>
+      <input type="text" name='description' placeholder="Description" required><br>
+      <input type="text" name="quantity" placeholder="Quantity" required><br>
+      <input type="text" name="price" placeholder="Price" required><br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+</div>
+{% endblock %}

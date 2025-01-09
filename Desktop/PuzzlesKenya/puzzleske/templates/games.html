@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyle/main.css') }}">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="games">
+    <div class="navbar">
+        <div class="bannerImage">
+            <img src="{{ url_for('static', filename='images/jigsaw.png') }}">
+            <p>PuzzlesKenya</p>
+        </div>
+
+        <div class="navs">
+            <div class="dropdown">
+                <button class="dropbtn">Games
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#chess">Chess</a>
+                    <a href="#rubix">Rubix</a>
+                    <a href="#monopoly">Monopoly</a>
+                </div>
+            </div>
+            <a href="{{ url_for('index.coaching') }}">Coaching</a>
+            <a href="#">Profile</a>
+            <a href="{{ url_for('index.home') }}">Home</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <section>
+            <article class="gameInfo" id="chess">
+                        <span>
+                            <h2>Chess</h2>
+                            <h3>Chess rules</h3>
+                        </span>
+                <p>
+                    This is also called the oldest game in the world. It is played using pieces, i.e. pawn, knight,
+                    bishop,
+                    rook, queen, king<br>
+                    Here are the other informations on chess.
+                </p>
+                <p>
+                    Rubix is a game of speed. Encourages ambidexterity it does. Very amazing<br>
+                    Here are the rules and some more information.
+                </p>
+            </article>
+
+            <article class="gameInfo" id="rubix">
+                        <span>
+                            <h2>Rubix</h2>
+                            <h3>Rubix rules</h3>
+                        </span>
+                <p>
+                    Rubix is a game of speed. Encourages ambidexterity it does. Very amazing<br>
+                    Here are the rules and some more information.
+                </p>
+                <p>
+                    Rubix is a game of speed. Encourages ambidexterity it does. Very amazing<br>
+                    Here are the rules and some more information.
+                </p>
+            </article>
+
+            <article class="gameInfo" id="monopoly">
+                        <span>
+                            <h2>Monopoly</h2>
+                            <h3>Monopoly rules</h3>
+                        </span>
+                <p>
+                    Monopoly is a game of strategy. Encourages ambidexterity it does. Very amazing<br>
+                    Here are the rules and some more information.
+                </p>
+                <p>
+                    Rubix is a game of speed. Encourages ambidexterity it does. Very amazing<br>
+                    Here are the rules and some more information.
+                </p>
+            </article>
+        </section>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+<footer>
+    <div class="siteInfo">
+        <p>
+            Contact us:
+            <a href="#twitter">Twitter/X</a>
+            <a href="#facebook">Facebook</a>
+            <a href="#Linkedin">Linkedin</a>
+        </p>
+        <p>
+            For inquiries, <a href="#email"><em>email</em></a> us
+        </p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mystyle/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<header>
+    <div class="banner">
+        <div class="bannerImage">
+            <img src="{{ url_for('static', filename='images/jigsaw.png') }}" alt="Logo">
+            <p>PuzzlesKenya</p>
+        </div>
+        <div class="navs">
+            <nav>
+                <div class="navlink">
+                    <a class="link" href="{{ url_for('index.home') }}" onclick="setActive(this)">Home</a>
+                    <a class="link" href="{{ url_for('index.games') }}" onclick="setActive(this)">Games</a>
+                    <a class="link" href="{{ url_for('index.coaching') }}" onclick="setActive(this)">Coaching</a>
+                    <a class="link" href="#" onclick="setActive(this)">Profile</a>
+                    <a class="link" href="{{ url_for('index.cart') }}" onclick="setActive(this)">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </div>
+                <div class="clear"></div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+</body>
+</html>

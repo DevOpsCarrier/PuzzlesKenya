@@ -1,0 +1,320 @@
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(253, 251, 251);
+}
+html body {
+  display: block;
+  min-height: 100%;
+  font-size: 2em;
+  font-style: italic;
+}
+html body header {
+  margin-bottom: 60px;
+  background-color: rgb(61, 56, 56);
+  width: 100%;
+  height: 40%;
+}
+html body header .banner {
+  margin: 1rem;
+  border-radius: 1em;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-content: center;
+}
+html body header .banner .bannerImage {
+  font-family: Chancery, cursive;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  color: #e88709;
+}
+html body header .banner .bannerImage img {
+  border-radius: 50%;
+  border: 1px solid red;
+  box-shadow: 0 0 10px 10px #151515;
+  display: block;
+}
+html body header .banner .bannerImage p {
+  padding-left: 10px;
+}
+
+html body header .banner .navs nav {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  margin: 0;
+}
+html body header .banner nav .navlink {
+  text-align: center;
+  word-spacing: 2em;
+  padding: 20px;
+}
+html body header .banner nav .navlink a {
+  text-decoration: none;
+  color: #f2f2eb;
+}
+html body header .banner nav .navlink a:hover {
+  color: #4487f3;
+  width: auto;
+  border-radius: 2em;
+}
+html body header .banner nav .clear {
+  clear: both;
+}
+html body .container {
+  position: relative;
+  top: 0;
+  height: auto;
+  padding-top: 1%;
+}
+html body .container section {
+  height: 700px;
+  width: 98%;
+  background-color: #e88709;
+  border-radius: 2em;
+}
+html body .container section article {
+  color: #151515;
+  width: 98%;
+  overflow: hidden;
+}
+html body .container section article p {
+  text-align: center;
+  font-size: 30px;
+}
+html body .container section img {
+  max-width: 100%;
+  max-height: 400px;
+  padding: 30px;
+  margin: 0.5em;
+  border-radius: 2em;
+}
+html body .container section .image {
+  width: 96%;
+  height: 100%;
+  opacity: 0.7;
+}
+html body .container .username {
+  text-align: center;
+}
+html body .container #cart {
+  border-radius: 3rem;
+  text-decoration: none;
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 1em;
+  max-width: 20%;
+  font-size: 40px;
+  font-style: italic;
+  padding: auto;
+  background-color: #c6c5d1;
+  color: #130c42;
+}
+html body .container #cart:hover {
+  box-shadow: 0 0 5px 5px;
+}
+html body .container .content {
+  color: #151515;
+  margin-top: 50px;
+}
+html body .container .content #profile {
+  display: inline;
+  margin: 30px;
+  background-color: #3b6930;
+  color: #151515;
+  font-size: 1em;
+  border: 2px dotted rgb(7, 7, 7);
+  border-radius: 2rem;
+}
+html body .container .content #profile:hover {
+  box-shadow: 0 0 3px 3px #151515;
+  color: #151515;
+}
+html body .container .content .gameInfo {
+  padding: 10px;
+  margin: 1rem;
+}
+html body .container .content .gameInfo .avatar {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+html body .container .staff {
+  margin: 10px;
+  border-bottom: 3px dotted #4145a4;
+}
+html body .container .staff img {
+  max-height: 300px;
+  max-width: 300px;
+}
+html body .games section {
+  color: #151515;
+  padding: 4rem;
+}
+html body .games section h2 {
+  text-align: center;
+  color: #2dc407;
+  font-size: 2em;
+}
+html body .games section h3 {
+  text-align: left;
+  margin-left: 50px;
+  color: #2dc407;
+  -webkit-text-decoration: double underline;
+          text-decoration: double underline;
+}
+html body .games section article {
+  padding-bottom: 30px;
+}
+html body .games .navbar {
+  overflow-x: auto;
+  background-color: rgb(61, 56, 56);
+  color: #151515;
+  width: 100%;
+  height: 300px;
+}
+html body .games .navbar .navs{
+    display: inline;
+    text-align: center;
+}
+html body .games .navbar .bannerImage {
+  font-family: Chancery, cursive;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: #e88709;
+}
+html body .games .navbar .bannerImage img {
+  display: block;
+  margin-top: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 10px #151515;
+}
+html body .games .navbar .bannerImage p {
+  margin-left: 10px;
+}
+html body .games .navbar a {
+  font-size: 1em;
+  justify-content: center;
+  color: #f2f2eb;
+  padding: 20px;
+  text-decoration: none;
+}
+html body .games .dropdown {
+  display: inline;
+  overflow: hidden;
+  justify-content: center;
+}
+html body .games .dropdown .dropbtn {
+  display: inline;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  padding: 20px;
+  color: #f2f2eb;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+html body .games .navbar a:hover, html body .games .dropdown:hover .dropbtn {
+  color: rgb(92, 92, 236);
+}
+html body .games .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  box-shadow: 0px 8px 16px 0px white;
+  z-index: 1;
+}
+html body .games .dropdown-content a {
+  float: none;
+  color: #151515;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+html body .games .dropdown-content a:hover {
+  background-color: #ddd;
+}
+html body .games .dropdown:hover .dropdown-content {
+  display: block;
+}
+html body .reg{
+    background-color: #4269f5;
+    font-family: Chancery, cursive;
+    display: inline-block;
+    width: 100%;
+}
+html body .reg .login{
+    text-align: center;
+}
+html body .reg .register{
+    text-align: center;
+}
+html body .reg input{
+    height: 4em;
+    width: 50em;
+    border-radius: 3em;
+}
+html body .reg .login .submit{
+    width: 10em;
+    font-size: 1rem;
+    font-weight: bold;
+}
+html body .reg .register .submit{
+    width: 10em;
+    font-size: 1rem;
+    font-weight: bold;
+}
+html body footer {
+  margin-top: 5rem;
+  background-color: rgb(61, 56, 56);
+  padding: 5px;
+  text-align: center;
+}
+html body footer .siteInfo {
+  bottom: 0;
+  margin: 0;
+}
+html body footer .siteInfo p {
+  color: #151515;
+  font-size: 1em;
+}
+html body footer .siteInfo a {
+  text-decoration: none;
+  padding-right: 20px;
+  color: #151515;
+}
+html body footer .siteInfo a:hover {
+  color: #4540e9;
+}
+/* Responsive page */
+@media screen and (max-width:800px) {
+  html body header .banner nav .navlink{
+    word-spacing: 1em;
+    width: 100%;
+  }
+  html body header .banner .bannerImage{
+    width: 100%
+  }
+  .games .navbar{
+    margin-bottom: 10px;
+  }
+  .games .navbar .bannerImage img{
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid red;
+  }
+  html body .container section .image{
+    width: 90%;
+  }
+  .content{
+    width: 100%;
+  }
+}

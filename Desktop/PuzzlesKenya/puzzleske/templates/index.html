@@ -1,0 +1,147 @@
+<!Doctype html>
+<html>
+<head>
+    <title>PuzzlesKenya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mystyle/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<header>
+    <div class="banner">
+        <div class="bannerImage">
+            <img src="{{ url_for('static', filename='images/jigsaw.png') }}" alt="Logo">
+            <p>PuzzlesKenya</p>
+        </div>
+        <div class="navs">
+            <nav>
+                <div class="navlink">
+                    <a class="link" href="{{ url_for('index.home') }}" onclick="setActive(this)">Home</a>
+                    <a class="link" href="{{ url_for('index.games') }}" onclick="setActive(this)">Games</a>
+                    <a class="link" href="{{ url_for('index.coaching') }}" onclick="setActive(this)">Coaching</a>
+                    <a class="link" href="#" onclick="setActive(this)">Profile</a>
+                    <a class="link" href="{{ url_for('auth.login') }}" onclick="setActive(this)">Login</a>
+                    <a class="link" href="{{ url_for('index.cart') }}" onclick="setActive(this)">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </div>
+                <div class="clear"></div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!--Start of content-->
+<div class="container">
+    <section class="content">
+        <article>
+            <img class="image" src="{{ url_for('static', filename='images/rubix.png') }}">
+        </article>
+        <article>
+            <p>
+                Product description here<br>
+                Some more text here as well.
+            </p>
+            <button id="cart" onclick="clicked()">Buy</button>
+        </article>
+    </section>
+
+
+    <section class="content">
+        <article>
+            <img class="image" src="{{ url_for('static', filename='images/rubix.jpeg') }}">
+        </article>
+        <article>
+            <p>
+                Product description here<br>
+                Some more text here as well.
+            </p>
+            <button id="cart" onclick="">Buy</button>
+        </article>
+    </section>
+
+    <section class="content">
+        <article>
+            <img class="image" src="{{ url_for('static', filename='images/puzzle1.jpeg') }}">
+        </article>
+        <article>
+            <p>
+                Product description here<br>
+                Some more text here as well.
+            </p>
+            <button id="cart" onclick="">Buy</button>
+        </article>
+    </section>
+
+    <section class="content">
+        <article>
+            <img class="image" src="{{ url_for('static', filename='images/jigsaw.png') }}">
+        </article>
+        <article>
+            <p>
+                Product description here<br>
+                Some more text here as well.
+            </p>
+            <button id="cart" onclick="">Buy</button>
+        </article>
+    </section>
+
+    <section class="content">
+        <article>
+            <img class="image" src="{{ url_for('static', filename='images/download.jpeg') }}">
+        </article>
+        <article>
+            <p>
+                Product description here<br>
+                Some more text here as well.
+            </p>
+            <button id="cart" onclick="">Buy</button>
+        </article>
+    </section>
+
+    <section class="content">
+        <article>
+            <img class="image" src="{{ url_for('static', filename='images/coffee.jpg') }}">
+        </article>
+        <article>
+            <p>
+                Product description here<br>
+                Some more text here as well.
+            </p>
+            <button id="cart" onclick="">Buy</button>
+        </article>
+    </section>
+
+    <section class="content">
+        <article>
+            <img class="image" src="{{ url_for('static', filename='images/coffee.jpg') }}">
+        </article>
+        <article>
+            <p>
+                Product description here<br>
+                Some more text here as well.
+            </p>
+            <button id="cart" onclick="">Buy</button>
+        </article>
+    </section>
+</div>
+<!--End of content-->
+
+<footer>
+    <div class="siteInfo">
+        <p>
+            Contact us on:
+            <a href="#twitter">Twitter/X</a>
+            <a href="#facebook">Facebook</a>
+            <a href="#Linkedin">Linkedin</a>
+        </p>
+        <p>
+            For inquiries, <a href="#email"><em>email</em></a>us.
+        </p>
+    </div>
+    <div class="clear"></div>
+</footer>
+<script src="{{ url_for('static', filename='mystyle/main.js') }}"></script>
+</body>
+</html>

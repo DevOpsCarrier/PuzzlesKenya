@@ -1,0 +1,7 @@
+1. Create the databases i.e postgresDB
+    1/ Implement cart/ buying
+    2/ Implement user profile
+    3/
+2. Create docker file and image
+    1/ try uploading using GitHub.
+3. Upload to render
